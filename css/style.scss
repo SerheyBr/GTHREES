@@ -440,12 +440,12 @@ margin-bottom: 140px;
 	}
 
 	&__slider {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// z-index: -1;
+		// width: 100%;
+		// height: 100%;
 	}
 
 	&__slider-item {
@@ -455,6 +455,8 @@ margin-bottom: 140px;
 .main-slider {
 
 	&__btns {
+		display: flex;
+		gap: 30px;
 	}
 
 	&__btn {
@@ -571,10 +573,18 @@ margin-bottom: 140px;
 }
 .services-carusel {
 	display: flex;
+	z-index: 1;
+	width: 100%;
+	height: 349px;
 	&__item {
 		position: relative;
-	}
 
+		
+	}
+	&__slide{
+		width: 300px;
+		background: none;
+	}
 	&__item-img {
 	}
 

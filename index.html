@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/slider-styles.css">
 	<link rel="stylesheet" href="css/reset.css">
 	
 	<link rel="stylesheet" href="/css/style.css">
@@ -200,16 +201,16 @@
 				</div>
 				<div class="main__footer">
 					<div class="main-slider__btns">
-						<button class="main-slider__btn">
+						<div class="swiper-button-prev">
 							<svg width="81" height="14" viewBox="0 0 81 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M81 7H2M2 7L9 1M2 7L9 13" stroke="#9CA3AF" stroke-width="2"/>
-							</svg>	
-						</button>
-						<button class="main-slider__btn">
+							</svg>
+						</div>
+						<div class="swiper-button-next">
 							<svg width="81" height="14" viewBox="0 0 81 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 7H79M79 7L72 1M79 7L72 13" stroke="white" stroke-width="2"/>
 							</svg>
-						</button>
+						</div>
 					</div>
 					<ul class="main__footer-social">
 						<li class="main__footer-social-link">
@@ -269,11 +270,39 @@
 			</li>
 			
 		</ul>
-		<div class="main__slider">
+		<!-- <div class="main__slider">
 			<div class="main__slider-item">
 				<img src="img/main-slider/img1.jpg" alt="slider-img1">
 			</div>
+		</div>  -->
+
+
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><div class="main__slider">
+				<div class="main__slider-item">
+					<img src="img/main-slider/img1.jpg" alt="slider-img1">
+				</div>
+				</div> 
+			</div>
+			<div class="swiper-slide"><div class="main__slider">
+				<div class="main__slider-item">
+					<img src="img/main-slider/img2.jpg" alt="slider-img1">
+				</div>
+			</div>
+		 </div>
+		 <div class="swiper-slide"><div class="main__slider">
+			<div class="main__slider-item">
+				<img src="img/main-slider/img3.jpg" alt="slider-img1">
+			</div>
 		</div>
+	 </div>
+	
+		</div>
+	</div>
+
+
+
 	</section>
 	<section class="achievements">
 		<div class="container">
@@ -348,24 +377,50 @@
 						<path d="M1 15.5L15 1.5M15 1.5H2.21739M15 1.5V14.2826" stroke="#99FF99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>	
 				</div>
-				<div class="services__carusel services-carusel">
-					<div class="services-carusel__item">
-						<img class="services-carusel__item-img" src="img/services-slider/img1.jpg" alt="services-img1">
-						<p class="services-carusel__item-title">Авиаперевозки</p>
+				<div class="swiper services-carusel">
+					<div class="swiper-wrapper services-carusel__wrapper">
+					  <div class="swiper-slide services-carusel__slide">
+						<div class="services-carusel__item">
+							<img class="services-carusel__item-img" src="img/services-slider/img1.jpg" alt="services-img1">
+							<p class="services-carusel__item-title">Авиаперевозки</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide services-carusel__slide">
+						<div class="services-carusel__item">
+							<img class="services-carusel__item-img" src="img/services-slider/img2.jpg" alt="services-img2">
+							<p class="services-carusel__item-title">Автомобильные перевозки</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide services-carusel__slide">
+						<div class="services-carusel__item">
+							<img class="services-carusel__item-img" src="img/services-slider/img3.jpg" alt="services-img3">
+							<p class="services-carusel__item-title">Железнодорожные перевозки</p>
+						</div>
+					  </div>
+					  <div class="swiper-slide">
+						<div class="services-carusel__item">
+							<img class="services-carusel__item-img" src="img/services-slider/img4.jpg" alt="services-img4">
+							<p class="services-carusel__item-title">Мультимодальные перевозки</p>
+						</div>
+					  </div>
+
+
+					 
+					 
+				
+			
+					
 					</div>
-					<div class="services-carusel__item">
-						<img class="services-carusel__item-img" src="img/services-slider/img2.jpg" alt="services-img2">
-						<p class="services-carusel__item-title">Автомобильные перевозки</p>
-					</div>
-					<div class="services-carusel__item">
-						<img class="services-carusel__item-img" src="img/services-slider/img3.jpg" alt="services-img3">
-						<p class="services-carusel__item-title">Железнодорожные перевозки</p>
-					</div>
-					<div class="services-carusel__item">
-						<img class="services-carusel__item-img" src="img/services-slider/img4.jpg" alt="services-img4">
-						<p class="services-carusel__item-title">Мультимодальные перевозки</p>
-					</div>
-				</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination services-carusel__pagination"></div>
+				 
+					<!-- If we need navigation buttons -->
+					<div class="services-carusel__button-prev"></div>
+					<div class="services-carusel__button-next"></div>
+				 
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar services-carusel__scrollbar"></div>
+				 </div>
 			</div>
 		</div>
 	</section>
