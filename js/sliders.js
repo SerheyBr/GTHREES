@@ -1,23 +1,22 @@
-const swiper = new Swiper(".mySwiper", {
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
-	},
-	loop: true,
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	 },
-	 effect: "fade",
- });
+const swiper = new Swiper('.slider-main', {
+   navigation: {
+      nextEl: '.slider-main__button-next',
+      prevEl: '.slider-main__button-prev',
+   },
+   loop: true,
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+   },
+   effect: 'fade',
+})
 
- const swiper1 = new Swiper(".services-carusel", {
-	scrollbar: {
-		el: ".services-carusel__scrollbar",
-		dragClass: 'rrr',
-	 },
-	
-	 slidesPerView: 3,
-	 spaceBetween: 20,
+const swiper1 = new Swiper('.slider-services', {
+   scrollbar: {
+      el: '.slider-services__scrollbar',
+      dragClass: 'slider-services__drag',
+   },
 
- });
+   slidesPerView: 4,
+   spaceBetween: 20,
+})
