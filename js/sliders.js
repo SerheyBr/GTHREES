@@ -19,4 +19,15 @@ const swiper1 = new Swiper('.slider-services', {
 
    slidesPerView: 4,
    spaceBetween: 20,
+   breakpoints: {
+      320: {
+         slidesPerView: 2,
+      },
+      570: {
+         slidesPerView: 3,
+      },
+      1024: {
+         slidesPerView: 4,
+      },
+   },
 })
