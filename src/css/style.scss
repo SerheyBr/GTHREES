@@ -1344,7 +1344,8 @@ body {
 .footer {
    padding-top: 140px;
    padding-bottom: 42px;
-   background-image: url('/img/map-gost.svg'), url('/img/news/bg.jpg');
+   // background-image: url('../../public/img/map-gost.svg'),
+   //    url('../public/img/news/bg.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
