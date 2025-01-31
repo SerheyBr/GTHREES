@@ -87,9 +87,11 @@ button {
   }
 }
 
-html,
-body {
+.no-scroll {
   overflow-x: hidden;
+}
+
+body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
@@ -635,6 +637,7 @@ body {
   margin-bottom: 60px;
 }
 .about__map {
+  position: relative;
   margin-bottom: 17px;
 }
 @media (max-width: 550px) {
@@ -647,6 +650,86 @@ body {
   .about__text {
     font-size: 18px;
   }
+}
+
+.map-dot {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+.map-dot__sm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+}
+.map-dot__sm img {
+  position: absolute;
+}
+.map-dot__md {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.map-dot__text {
+  position: absolute;
+  top: -44px;
+  left: 17px;
+  box-shadow: 0 2px 8px 0 rgba(76, 123, 135, 0.2);
+  background: var(--white);
+  padding: 8px 12px;
+  border-radius: 6px 6px 6px 0;
+  white-space: nowrap;
+  opacity: 0;
+}
+.map-dot__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text-body);
+  margin-bottom: 4px;
+}
+.map-dot__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-5);
+}
+
+.map-dot-1 {
+  top: 27%;
+  right: 39%;
+}
+
+.map-dot-2 {
+  bottom: 21%;
+  right: 17%;
+}
+@media (max-width: 980px) {
+  .map-dot-2 {
+    display: none;
+  }
+}
+
+.map-dot-3 {
+  bottom: 15.6%;
+  left: 29.6%;
+}
+
+.map-dot-4 {
+  top: 18%;
+  left: 9%;
+}
+
+.map-dot-5 {
+  top: 50%;
+  left: 47%;
 }
 
 .services {

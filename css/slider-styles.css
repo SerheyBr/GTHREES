@@ -51,7 +51,6 @@
 
 .slider-services {
   height: 349px;
-  width: 134%;
 }
 .slider-services__wrapper {
   position: relative;
@@ -81,14 +80,8 @@
   background-color: var(--accent-2);
   height: 4px;
 }
-@media (max-width: 1024px) {
-  .slider-services {
-    width: 160%;
-  }
-}
 @media (max-width: 550px) {
   .slider-services {
-    width: 170%;
     height: 230px;
   }
 }

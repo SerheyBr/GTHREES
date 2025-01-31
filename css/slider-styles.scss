@@ -144,7 +144,7 @@
 
 .slider-services {
    height: 349px;
-   width: 134%;
+   // width: 134%;
    &__wrapper {
       position: relative;
       width: 100%;
@@ -178,10 +178,10 @@
    @media (max-width: 1250px) {
    }
    @media (max-width: 1024px) {
-      width: 160%;
+      // width: 160%;
    }
    @media (max-width: 550px) {
-      width: 170%;
+      // width: 170%;
       height: 230px;
    }
 }
