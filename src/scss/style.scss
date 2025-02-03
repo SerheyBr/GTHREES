@@ -1,0 +1,18 @@
+// Базовые стили
+@use 'base/reset';
+@use 'base/variables';
+
+// Блоки макета
+@use 'layouts/header';
+@use 'layouts/footer';
+
+// Компоненты
+
+//секции
+@use 'sections/main';
+@use 'sections/about';
+@use 'sections/services';
+@use 'sections/why-us';
+@use 'sections/news';
+@use 'sections/questions';
+@use 'sections/achievements';
