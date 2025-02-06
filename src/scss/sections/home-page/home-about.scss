@@ -1,0 +1,41 @@
+.about {
+   margin-bottom: 240px;
+
+   &__title {
+      margin-bottom: 40px;
+   }
+
+   &__text {
+      max-width: 1087px;
+      margin-left: auto;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 140%;
+      color: var(--text-body);
+      margin-bottom: 60px;
+   }
+
+   &__map {
+      margin-bottom: 17px;
+   }
+
+   &__link {
+   }
+
+   @media (max-width: 1750px) {
+   }
+   @media (max-width: 1250px) {
+   }
+   @media (max-width: 1024px) {
+   }
+   @media (max-width: 550px) {
+      margin-bottom: 110px;
+      &__title {
+         margin-bottom: 30px;
+      }
+      &__text {
+         font-size: 18px;
+      }
+   }
+}

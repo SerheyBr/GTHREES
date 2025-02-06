@@ -1,0 +1,40 @@
+.about-citation {
+   margin-bottom: 140px;
+   &__wrapper {
+      position: relative;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 140%;
+      color: var(--text-body);
+      max-width: 891px;
+      margin-left: auto;
+   }
+   span {
+      position: absolute;
+      top: -118px;
+      left: -97px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 700px;
+      line-height: 100%;
+      color: var(--accent-2);
+      opacity: 0.5;
+   }
+   @media (max-width: 1750px) {
+   }
+
+   @media (max-width: 1024px) {
+      &__wrapper {
+         font-size: 22px;
+         span {
+            font-size: 340px;
+            top: -39px;
+            left: -18px;
+         }
+      }
+   }
+   @media (max-width: 550px) {
+      margin-bottom: 80px;
+   }
+}

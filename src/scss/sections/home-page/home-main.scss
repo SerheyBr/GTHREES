@@ -6,11 +6,6 @@
       padding-top: 180px;
    }
 
-   &__svg-title {
-      position: absolute;
-      top: -90px;
-   }
-
    &__text {
    }
 
@@ -114,19 +109,12 @@
          bottom: 120px;
       }
    }
-   @media (max-width: 1250px) {
-      &__svg-title {
-         left: 0;
-         top: -75px;
-      }
-   }
+
    @media (max-width: 1024px) {
       &__wrapper {
          padding-top: 110px;
       }
-      &__svg-title {
-         top: -29px;
-      }
+
       &__sidebar-social {
          display: none;
       }

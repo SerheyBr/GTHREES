@@ -1,0 +1,20 @@
+.section__link-white {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--white);
+      margin-right: 10px;
+      transition: all 0.3s;
+   }
+   &:hover p {
+      color: rgba(153, 255, 153, 0.623);
+   }
+}

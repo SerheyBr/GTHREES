@@ -10,11 +10,6 @@
    &__wrapper {
    }
 
-   &__svg-title {
-      position: absolute;
-      top: -95px;
-   }
-
    &__title {
       margin-bottom: 38px;
    }
@@ -49,10 +44,7 @@
    @media (max-width: 550px) {
       padding-bottom: 124px;
       margin-bottom: 80px;
-      &__svg-title {
-         top: -30px;
-         left: 0;
-      }
+
       &__title {
          margin-bottom: 30px;
       }

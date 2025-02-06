@@ -1,0 +1,21 @@
+.section__title {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 52px;
+   line-height: 140%;
+   color: var(--accent-1);
+   @media (max-width: 600px) {
+      font-size: 36px;
+   }
+}
+
+.section__title-white {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 52px;
+   line-height: 140%;
+   color: var(--white);
+   @media (max-width: 600px) {
+      font-size: 36px;
+   }
+}

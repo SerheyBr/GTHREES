@@ -7,12 +7,21 @@
 @use 'layouts/footer';
 
 // Компоненты
+@use 'components/map';
+@use 'components/title-svg';
 
 //секции
-@use 'sections/main';
-@use 'sections/about';
-@use 'sections/services';
-@use 'sections/why-us';
-@use 'sections/news';
-@use 'sections/questions';
-@use 'sections/achievements';
+@use 'sections/global/questions';
+@use 'sections/global/achievements';
+@use 'sections/home-page/home-main';
+@use 'sections/home-page/home-about';
+@use 'sections/home-page/home-services';
+@use 'sections/home-page/home-why-us';
+@use 'sections/home-page/home-news';
+@use 'sections/about-page/about-main.scss';
+@use 'sections/about-page/about-citation.scss';
+@use 'sections/about-page/about-superiors.scss';
+@use 'sections/about-page/about-priorities.scss';
+@use 'sections/about-page/about-history.scss';
+
+//страницы

@@ -92,6 +92,7 @@ export function cleanDist() {
 export function browsersync() {
    browserSync.init({
       server: { baseDir: paths.dist.html },
+      startPath: '/about.html',
       notify: false,
    })
 }
