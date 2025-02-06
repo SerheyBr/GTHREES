@@ -19,14 +19,17 @@
    </head>
    <body>
       @@include('partials/sections/global/header.html')
-      @@include('partials/sections/home-page/home-main.html')
-      @@include('partials/sections/global/achievements.html')
-      @@include('partials/sections/home-page/home-about.html')
-      @@include('partials/sections/home-page/home-services.html')
+      <!-- prettier-ignore -->
+      @@include('partials/sections/global/section-main.html',
+		 { 
+			"bg": 'assets/img/pages/detailed-services/bg.jpg',
+			"title": "Авиаперевозки",
+			"text": "Среди наших клиентов существует постоянная потребность в доставке грузов авиасообщением. Поэтому для оказания полного комплекса логистических услуг мы решили открыть направление авиаперевозок.", 
+			})
+      @@include('partials/sections/detailed-services-page/description-service.html')
+      @@include('partials/sections/detailed-services-page/detailed-serv-we-offer.html')
+      @@include('partials/sections/detailed-services-page/detailed-serv-about.html') 
       @@include('partials/sections/global/section-why-us.html')
-      @@include('partials/sections/home-page/home-partners.html')
-      @@include('partials/sections/home-page/home-news.html')
-      @@include('partials/sections/global/questions.html')
       @@include('partials/sections/global/footer.html')
 
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>

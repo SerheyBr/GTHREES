@@ -14,10 +14,11 @@
 @use 'sections/global/questions';
 @use 'sections/global/achievements';
 @use 'sections/global/section-main.scss';
+@use 'sections/global/section-why-us.scss';
+
 @use 'sections/home-page/home-main';
 @use 'sections/home-page/home-about';
 @use 'sections/home-page/home-services';
-@use 'sections/home-page/home-why-us';
 @use 'sections/home-page/home-news';
 @use 'sections/about-page/about-main.scss';
 @use 'sections/about-page/about-citation.scss';
@@ -25,5 +26,8 @@
 @use 'sections/about-page/about-priorities.scss';
 @use 'sections/about-page/about-history.scss';
 @use 'sections/services-page/services-our-services.scss';
+@use 'sections/detailed-services-page/detailed-serv-we-offer.scss';
+@use 'sections/detailed-services-page/detailed-serv-about.scss';
+@use 'sections/news-page/news-list.scss';
 
 //страницы

@@ -131,7 +131,7 @@
    }
 
    @media (max-width: 1024px) {
-      &__wrapper {
+      & &__wrapper {
          padding-top: 110px;
       }
 
@@ -145,6 +145,11 @@
       }
       &__text-body {
          display: block;
+      }
+      &__description {
+         h2 {
+            font-size: 30px;
+         }
       }
    }
    @media (max-width: 550px) {

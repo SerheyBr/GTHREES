@@ -1,0 +1,26 @@
+.news-list {
+   margin-bottom: 140px;
+   &__wrapper {
+      border-top: 1px solid var(--gray-2);
+      border-bottom: 1px solid var(--gray-2);
+      margin-bottom: 60px;
+   }
+   &__btn {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      text-transform: uppercase;
+      color: var(--text-body);
+      height: 65px;
+      border: 1px solid var(--gray-2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+         background-color: var(--gray-1);
+      }
+   }
+}

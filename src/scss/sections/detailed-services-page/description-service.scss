@@ -1,0 +1,31 @@
+.description-service {
+   margin-bottom: 140px;
+   &__wrapper {
+   }
+
+   &__title {
+      margin-bottom: 40px;
+   }
+
+   &__text {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 140%;
+      color: var(--text-body);
+      max-width: 964px;
+      margin-left: auto;
+      p {
+         margin-bottom: 30px;
+      }
+   }
+   @media (max-width: 550px) {
+      margin-bottom: 80px;
+      &__title {
+         margin-bottom: 30px;
+      }
+      &__text {
+         font-size: 18px;
+      }
+   }
+}
