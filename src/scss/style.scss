@@ -13,6 +13,7 @@
 //секции
 @use 'sections/global/questions';
 @use 'sections/global/achievements';
+@use 'sections/global/section-main.scss';
 @use 'sections/home-page/home-main';
 @use 'sections/home-page/home-about';
 @use 'sections/home-page/home-services';
@@ -23,5 +24,6 @@
 @use 'sections/about-page/about-superiors.scss';
 @use 'sections/about-page/about-priorities.scss';
 @use 'sections/about-page/about-history.scss';
+@use 'sections/services-page/services-our-services.scss';
 
 //страницы
