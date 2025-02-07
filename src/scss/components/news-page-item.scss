@@ -9,7 +9,7 @@
    }
    &__img {
       margin-right: 20px;
-      width: 349px;
+      min-width: 349px;
       height: 278px;
       img {
          width: 100%;
@@ -66,5 +66,32 @@
    }
    &:hover svg {
       transform: rotate(45deg);
+   }
+   @media (max-width: 1100px) {
+      flex-direction: column;
+      padding: 18px 0;
+      margin-bottom: 24px;
+      &__img {
+         max-width: 349px;
+         margin-bottom: 12px;
+      }
+      &__date {
+         span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--gray-4);
+         }
+         display: flex;
+         margin-bottom: 8px;
+      }
+      &__text {
+         h4 {
+            margin-bottom: 8px;
+         }
+      }
+      svg {
+         display: none;
+      }
    }
 }
