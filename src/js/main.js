@@ -58,9 +58,15 @@ partnersTabsButtons.forEach((el) => {
 const questionsAccordionItems = document.querySelectorAll(
    '.questions-accordion__item',
 )
+const jobOpeningsAccordionItems = document.querySelectorAll(
+   '.job-openinngs-accordion__item',
+)
 
 const closeAll = () => {
    questionsAccordionItems.forEach((el) => {
+      el.classList.remove('active')
+   })
+   jobOpeningsAccordionItems.forEach((el) => {
       el.classList.remove('active')
    })
 }
@@ -83,6 +89,16 @@ questionsAccordionItems.forEach((el) => {
       }
    })
 })
+jobOpeningsAccordionItems.forEach((el) => {
+   const btn = el.querySelector('.job-openinngs-accordion__btn')
+   btn.addEventListener('click', (e) => {
+      if (el.classList.contains('active')) {
+         closeSelectedItem(el)
+      } else {
+         openSelectedItem(el)
+      }
+   })
+})
 //animation map main page
 document.addEventListener('DOMContentLoaded', (event) => {
    document.querySelectorAll('.map-dot').forEach((dot) => {
@@ -99,5 +115,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
             '-=2',
          )
          .to({}, { duration: 2 })
+   })
+})
+
+//загрузка файлов
+
+document.querySelectorAll('.job-openinngs-accordion__item').forEach((el) => {
+   FilePond.create(el.querySelector('.input-file'), {
+      allowMultiple: true, // Разрешить множественную загрузку
+      maxFileSize: '3MB', // Максимальный размер файла
+      acceptedFileTypes: ['image/*'], // Только изображения
+      labelIdle:
+         '<p>Перетащите файлы или <span>выберите файл</span></p> <p>Размер файла: не более 3MB. Форматы: doc, docx, pdf, ppt, pptx</p>',
    })
 })
