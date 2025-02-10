@@ -129,3 +129,19 @@ document.querySelectorAll('.job-openinngs-accordion__item').forEach((el) => {
          '<p>Перетащите файлы или <span>выберите файл</span></p> <p>Размер файла: не более 3MB. Форматы: doc, docx, pdf, ppt, pptx</p>',
    })
 })
+
+FilePond.create(document.querySelector('.cost-calculation-form__input-file'), {
+   allowMultiple: true, // Разрешить множественную загрузку
+   maxFileSize: '3MB', // Максимальный размер файла
+   acceptedFileTypes: ['image/*'], // Только изображения
+   labelIdle: '<p>Добавьте файл сюда</p>',
+})
+
+//работа с select
+document.querySelectorAll('.custom-select').forEach((el) => {
+   console.log(el)
+   new Choices(el, {
+      searchEnabled: false, // Отключить поиск (если не нужен)
+      itemSelectText: '', // Убираем текст выбора
+   })
+})

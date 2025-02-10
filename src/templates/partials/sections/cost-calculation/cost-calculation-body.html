@@ -1,0 +1,605 @@
+<section class="cost-calculation">
+   <div class="container">
+      <div class="cost-calculation__wrapper">
+         <div class="cost-calculation__sidebar">
+            <h2 class="cost-calculation__title section__title-white">
+               расчёт стоимости
+            </h2>
+            <div class="cost-calculation-progres">
+               <svg
+                  width="34"
+                  height="423"
+                  viewBox="0 0 34 423"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+               >
+                  <line
+                     x1="17"
+                     y1="17"
+                     x2="17"
+                     y2="417"
+                     stroke="#D1D5DB"
+                     stroke-width="2"
+                  />
+                  <circle
+                     cx="17"
+                     cy="96"
+                     r="5.5"
+                     fill="#F3F3F3"
+                     stroke="#D1D5DB"
+                  />
+                  <circle
+                     cx="17"
+                     cy="96"
+                     r="5.5"
+                     fill="#F3F3F3"
+                     stroke="#D1D5DB"
+                  />
+                  <circle
+                     cx="17"
+                     cy="176"
+                     r="5.5"
+                     fill="#F3F3F3"
+                     stroke="#D1D5DB"
+                  />
+                  <circle
+                     cx="17"
+                     cy="256"
+                     r="5.5"
+                     fill="#F3F3F3"
+                     stroke="#D1D5DB"
+                  />
+                  <circle
+                     cx="17"
+                     cy="417"
+                     r="5.5"
+                     fill="#F3F3F3"
+                     stroke="#D1D5DB"
+                  />
+                  <circle
+                     cx="17"
+                     cy="336"
+                     r="5.5"
+                     fill="#F3F3F3"
+                     stroke="#D1D5DB"
+                  />
+                  <circle opacity="0.5" cx="17" cy="17" r="17" fill="#99FF99" />
+                  <circle
+                     cx="17"
+                     cy="17"
+                     r="5.5"
+                     fill="#99FF99"
+                     stroke="#99FF99"
+                  />
+               </svg>
+               <p
+                  class="cost-calculation-progres__title cost-calculation-progres__title--1"
+               >
+                  личные данные
+               </p>
+               <p
+                  class="cost-calculation-progres__title cost-calculation-progres__title--2"
+               >
+                  направления
+               </p>
+               <p
+                  class="cost-calculation-progres__title cost-calculation-progres__title--3"
+               >
+                  параметры груза
+               </p>
+               <p
+                  class="cost-calculation-progres__title cost-calculation-progres__title--4"
+               >
+                  загрузка
+               </p>
+               <p
+                  class="cost-calculation-progres__title cost-calculation-progres__title--5"
+               >
+                  условия поставки
+               </p>
+               <p
+                  class="cost-calculation-progres__title cost-calculation-progres__title--6"
+               >
+                  комментарий
+               </p>
+            </div>
+         </div>
+         <div class="cost-calculation__forms-wrapper">
+            <div class="cost-calculation-form cost-calculation-form--stage-1">
+               <div class="cost-calculation-form__header">
+                  <button class="cost-calculation-form__btn -back">
+                     <svg
+                        width="24"
+                        height="17"
+                        viewBox="0 0 24 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M9.78164 14.6871L4.78144 9.68689L3.92789 8.83333H5.135H23.5V7.5H5.135H3.92975L4.78106 6.64683L9.77161 1.64539L8.83333 0.707107L1.37377 8.16667L8.83458 15.6275L9.78164 14.6871Z"
+                           fill="#012B56"
+                           stroke="#012B56"
+                        />
+                     </svg>
+                  </button>
+                  <button
+                     class="cost-calculation-form__btn cost-calculation-form__btn-close"
+                  >
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M14.4731 1.8768L13.0631 0.466797L7.47314 6.0568L1.88314 0.466797L0.473145 1.8768L6.06314 7.4668L0.473145 13.0568L1.88314 14.4668L7.47314 8.8768L13.0631 14.4668L14.4731 13.0568L8.88314 7.4668L14.4731 1.8768Z"
+                           fill="#012B56"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <form action="#">
+                  <div class="cost-calculation-form__columns">
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-name">Ваше имя</label>
+                           <input type="text" id="cost-calc-name" name="name" />
+                        </div>
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-phone"
+                              >Контактный телефон</label
+                           >
+                           <input
+                              type="tel"
+                              id="cost-calc-phone"
+                              name="phone"
+                           />
+                        </div>
+                     </div>
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-mail">E-mail</label>
+                           <input
+                              type="email"
+                              id="cost-calc-mail"
+                              name="mail"
+                           />
+                        </div>
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-name-company"
+                              >Название компании</label
+                           >
+                           <input
+                              type="text"
+                              id="cost-calc-name-company"
+                              name="name-company"
+                           />
+                        </div>
+                     </div>
+                  </div>
+                  <button class="cost-calculation-form__btn-next">далее</button>
+               </form>
+               <div class="cost-calculation-form__footer">
+                  <p>Вы спешите? Нажмите на «Краткую форму»</p>
+                  <!--prettier-ignore-->
+                  <button>@@include('../../components/link.html', {"text": "КРАТКАЯ ФОРМА"})</button>
+               </div>
+            </div>
+
+            <div class="cost-calculation-form cost-calculation-form--stage-2">
+               <div class="cost-calculation-form__header">
+                  <button class="cost-calculation-form__btn -back">
+                     <svg
+                        width="24"
+                        height="17"
+                        viewBox="0 0 24 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M9.78164 14.6871L4.78144 9.68689L3.92789 8.83333H5.135H23.5V7.5H5.135H3.92975L4.78106 6.64683L9.77161 1.64539L8.83333 0.707107L1.37377 8.16667L8.83458 15.6275L9.78164 14.6871Z"
+                           fill="#012B56"
+                           stroke="#012B56"
+                        />
+                     </svg>
+                  </button>
+                  <button
+                     class="cost-calculation-form__btn cost-calculation-form__btn-close"
+                  >
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M14.4731 1.8768L13.0631 0.466797L7.47314 6.0568L1.88314 0.466797L0.473145 1.8768L6.06314 7.4668L0.473145 13.0568L1.88314 14.4668L7.47314 8.8768L13.0631 14.4668L14.4731 13.0568L8.88314 7.4668L14.4731 1.8768Z"
+                           fill="#012B56"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <form action="#">
+                  <div class="cost-calculation-form__columns">
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-from">Откуда</label>
+                           <input type="text" id="cost-calc-from" name="from" />
+                        </div>
+                     </div>
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-to">Куда</label>
+                           <input type="text" id="cost-calc-to" name="to" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cost-calculation-form__column">
+                     <div class="cost-calculation-form__input">
+                        <label for="Customs-clearance-place"
+                           >Места таможенного оформления</label
+                        >
+                        <input
+                           type="text"
+                           id="Customs-clearance-place"
+                           name="Customs-clearance-place"
+                        />
+                     </div>
+                  </div>
+                  <button class="cost-calculation-form__btn-next">далее</button>
+               </form>
+               <div class="cost-calculation-form__footer">
+                  <p>Вы спешите? Нажмите на «Краткую форму»</p>
+                  <!--prettier-ignore-->
+                  <button>@@include('../../components/link.html', {"text": "КРАТКАЯ ФОРМА"})</button>
+               </div>
+            </div>
+            <div class="cost-calculation-form cost-calculation-form--stage-3">
+               <div class="cost-calculation-form__header">
+                  <button class="cost-calculation-form__btn -back">
+                     <svg
+                        width="24"
+                        height="17"
+                        viewBox="0 0 24 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M9.78164 14.6871L4.78144 9.68689L3.92789 8.83333H5.135H23.5V7.5H5.135H3.92975L4.78106 6.64683L9.77161 1.64539L8.83333 0.707107L1.37377 8.16667L8.83458 15.6275L9.78164 14.6871Z"
+                           fill="#012B56"
+                           stroke="#012B56"
+                        />
+                     </svg>
+                  </button>
+                  <button
+                     class="cost-calculation-form__btn cost-calculation-form__btn-close"
+                  >
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M14.4731 1.8768L13.0631 0.466797L7.47314 6.0568L1.88314 0.466797L0.473145 1.8768L6.06314 7.4668L0.473145 13.0568L1.88314 14.4668L7.47314 8.8768L13.0631 14.4668L14.4731 13.0568L8.88314 7.4668L14.4731 1.8768Z"
+                           fill="#012B56"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <form action="#">
+                  <div class="cost-calculation-form__columns">
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-name-cargo"
+                              >Наименование груза</label
+                           >
+                           <input
+                              type="text"
+                              id="cost-calc-name-cargo"
+                              name="name-cargo"
+                           />
+                        </div>
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-weight"
+                              >Вес груза (брутто)</label
+                           >
+                           <input
+                              type="number"
+                              id="cost-calc-weight"
+                              name="weight"
+                           />
+                        </div>
+                     </div>
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-key-cargo">Код ТНВЭД</label>
+                           <input
+                              type="text"
+                              id="cost-calc-key-cargo"
+                              name="key-cargo"
+                           />
+                        </div>
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-volume-cargo"
+                              >Объём груза</label
+                           >
+                           <input
+                              type="text"
+                              id="cost-calc-volume-cargo"
+                              name="volume-cargo"
+                           />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="cost-calculation-form__select">
+                     <label for="cost-calc-volume-cargo-packaging"
+                        >Упаковка груза</label
+                     >
+                     <select
+                        class="custom-select"
+                        name="cargo-packaging"
+                        id="cost-calc-volume-cargo-packaging"
+                     >
+                        <option value="1">asd</option>
+                        <option value="2">as2323d</option>
+                        <option value="3">asd</option>
+                        <option value="4">as2323d</option>
+                     </select>
+                  </div>
+                  <button class="cost-calculation-form__btn-next">далее</button>
+               </form>
+               <div class="cost-calculation-form__footer">
+                  <p>Вы спешите? Нажмите на «Краткую форму»</p>
+                  <!--prettier-ignore-->
+                  <button>@@include('../../components/link.html', {"text": "КРАТКАЯ ФОРМА"})</button>
+               </div>
+            </div>
+            <div class="cost-calculation-form cost-calculation-form--stage-4">
+               <div class="cost-calculation-form__header">
+                  <button class="cost-calculation-form__btn -back">
+                     <svg
+                        width="24"
+                        height="17"
+                        viewBox="0 0 24 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M9.78164 14.6871L4.78144 9.68689L3.92789 8.83333H5.135H23.5V7.5H5.135H3.92975L4.78106 6.64683L9.77161 1.64539L8.83333 0.707107L1.37377 8.16667L8.83458 15.6275L9.78164 14.6871Z"
+                           fill="#012B56"
+                           stroke="#012B56"
+                        />
+                     </svg>
+                  </button>
+                  <button
+                     class="cost-calculation-form__btn cost-calculation-form__btn-close"
+                  >
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M14.4731 1.8768L13.0631 0.466797L7.47314 6.0568L1.88314 0.466797L0.473145 1.8768L6.06314 7.4668L0.473145 13.0568L1.88314 14.4668L7.47314 8.8768L13.0631 14.4668L14.4731 13.0568L8.88314 7.4668L14.4731 1.8768Z"
+                           fill="#012B56"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <form action="#">
+                  <div class="cost-calculation-form__columns">
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__select">
+                           <label for="cost-calc-type-car"
+                              >Тип транспорта</label
+                           >
+                           <select
+                              class="custom-select"
+                              name="car"
+                              id="cost-calc-type-car"
+                           >
+                              <option value="1">asd</option>
+                              <option value="2">as2323d</option>
+                              <option value="3">asd</option>
+                              <option value="4">as2323d</option>
+                           </select>
+                        </div>
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-date"
+                              >Вес груза (брутто)</label
+                           >
+                           <input type="date" id="cost-calc-date" name="date" />
+                        </div>
+                     </div>
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__select">
+                           <label for="cost-calc-type-loading"
+                              >Тип загрузки</label
+                           >
+                           <select
+                              class="custom-select"
+                              name="loading"
+                              id="cost-calc-type-loading"
+                           >
+                              <option value="1">asd</option>
+                              <option value="2">as2323d</option>
+                              <option value="3">asd</option>
+                              <option value="4">as2323d</option>
+                           </select>
+                        </div>
+                        <div class="cost-calculation-form__input">
+                           <label for="cost-calc-benchmark "
+                              >Желаемый ориентир по ставке</label
+                           >
+                           <input
+                              type="text"
+                              id="cost-calc-benchmark "
+                              name="benchmark "
+                           />
+                        </div>
+                     </div>
+                  </div>
+
+                  <button class="cost-calculation-form__btn-next">далее</button>
+               </form>
+               <div class="cost-calculation-form__footer">
+                  <p>Вы спешите? Нажмите на «Краткую форму»</p>
+                  <!--prettier-ignore-->
+                  <button>@@include('../../components/link.html', {"text": "КРАТКАЯ ФОРМА"})</button>
+               </div>
+            </div>
+            <div class="cost-calculation-form cost-calculation-form--stage-5">
+               <div class="cost-calculation-form__header">
+                  <button class="cost-calculation-form__btn -back">
+                     <svg
+                        width="24"
+                        height="17"
+                        viewBox="0 0 24 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M9.78164 14.6871L4.78144 9.68689L3.92789 8.83333H5.135H23.5V7.5H5.135H3.92975L4.78106 6.64683L9.77161 1.64539L8.83333 0.707107L1.37377 8.16667L8.83458 15.6275L9.78164 14.6871Z"
+                           fill="#012B56"
+                           stroke="#012B56"
+                        />
+                     </svg>
+                  </button>
+                  <button
+                     class="cost-calculation-form__btn cost-calculation-form__btn-close"
+                  >
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M14.4731 1.8768L13.0631 0.466797L7.47314 6.0568L1.88314 0.466797L0.473145 1.8768L6.06314 7.4668L0.473145 13.0568L1.88314 14.4668L7.47314 8.8768L13.0631 14.4668L14.4731 13.0568L8.88314 7.4668L14.4731 1.8768Z"
+                           fill="#012B56"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <form action="#">
+                  <div class="cost-calculation-form__columns">
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__select">
+                           <label for="cost-calc-delivery-terms"
+                              >Условия поставки</label
+                           >
+                           <select
+                              class="custom-select"
+                              name="delivery-terms"
+                              id="cost-calc-delivery-terms"
+                           >
+                              <option value="1">asd</option>
+                              <option value="2">as2323d</option>
+                              <option value="3">asd</option>
+                              <option value="4">as2323d</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="cost-calculation-form__column">
+                        <div class="cost-calculation-form__select">
+                           <label for="cost-calc-who-executes"
+                              >Кто оформляет EX</label
+                           >
+                           <select
+                              class="custom-select"
+                              name="who-executes"
+                              id="cost-calc-who-executes"
+                           >
+                              <option value="1">asd</option>
+                              <option value="2">as2323d</option>
+                              <option value="3">asd</option>
+                              <option value="4">as2323d</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+
+                  <button class="cost-calculation-form__btn-next">далее</button>
+               </form>
+               <div class="cost-calculation-form__footer">
+                  <p>Вы спешите? Нажмите на «Краткую форму»</p>
+                  <!--prettier-ignore-->
+                  <button>@@include('../../components/link.html', {"text": "КРАТКАЯ ФОРМА"})</button>
+               </div>
+            </div>
+            <div class="cost-calculation-form cost-calculation-form--stage-6">
+               <div class="cost-calculation-form__header">
+                  <button class="cost-calculation-form__btn -back">
+                     <svg
+                        width="24"
+                        height="17"
+                        viewBox="0 0 24 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M9.78164 14.6871L4.78144 9.68689L3.92789 8.83333H5.135H23.5V7.5H5.135H3.92975L4.78106 6.64683L9.77161 1.64539L8.83333 0.707107L1.37377 8.16667L8.83458 15.6275L9.78164 14.6871Z"
+                           fill="#012B56"
+                           stroke="#012B56"
+                        />
+                     </svg>
+                  </button>
+                  <button
+                     class="cost-calculation-form__btn cost-calculation-form__btn-close"
+                  >
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M14.4731 1.8768L13.0631 0.466797L7.47314 6.0568L1.88314 0.466797L0.473145 1.8768L6.06314 7.4668L0.473145 13.0568L1.88314 14.4668L7.47314 8.8768L13.0631 14.4668L14.4731 13.0568L8.88314 7.4668L14.4731 1.8768Z"
+                           fill="#012B56"
+                        />
+                     </svg>
+                  </button>
+               </div>
+               <form action="#">
+                  <div class="cost-calculation-form__textarea">
+                     <label for="cost-calc-textarea">Ваш комментарий</label>
+                     <textarea
+                        name="your-message"
+                        id="cost-calc-textarea"
+                     ></textarea>
+                  </div>
+                  <p class="cost-calculation-form__file-title">Добавить файл</p>
+                  <div class="cost-calculation-form__file">
+                     <input
+                        type="file"
+                        class="cost-calculation-form__input-file"
+                     />
+                  </div>
+                  <div class="cost-calculation-form__checkbox">
+                     <div class="pretty p-default p-curve p-outline">
+                        <input type="checkbox" />
+                        <div class="state">
+                           <label
+                              >Я согласен с условиями
+                              <span>Политики конфиденциальности</span> и
+                              <span>Обработки персональных данных</span>.
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <!--prettier-ignore-->
+                  <button class="cost-calculation-form__btn-finish">@@include('../../components/link-white.html', {"text": "получить расчёт"})</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
